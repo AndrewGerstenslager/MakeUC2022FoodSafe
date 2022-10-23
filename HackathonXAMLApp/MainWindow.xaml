@@ -1,0 +1,122 @@
+﻿<Window x:Class="HackathonXAMLApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HackathonXAMLApp.Converters"
+        xmlns:local2="clr-namespace:HackathonXAMLApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Window.Resources>
+        <local:FoodXToVisibilityConverter x:Key="FoodXToVisibilityConverter"/>
+        <local:FoodCheckToVisibilityConverter x:Key="FoodCheckToVisibilityConverter"/>
+    </Window.Resources>
+    <Window.DataContext>
+        <local2:User/>
+    </Window.DataContext>
+
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="20"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button Content="Create Profile"
+                FontSize="24"
+                Grid.Row="0"
+                Grid.Column="0"
+                Width="160"
+                Height="60"
+                Click="CreateProfileButtonClick"/>
+        <Button Content="Camera"
+                Grid.Column="4"
+                Grid.Row="0"
+                FontSize="24"
+                Width="160"
+                Height="60"/>
+        <Label Content="FoodSafe"
+               Grid.Row="0"
+               Grid.Column="1"
+               Grid.ColumnSpan="3"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               FontSize="60"
+               FontStyle="Italic"/>
+        <ComboBox Grid.Row="1" 
+                  Grid.Column="0" 
+                  Grid.ColumnSpan="2" 
+                  ItemsSource="{Binding Profiles, UpdateSourceTrigger=PropertyChanged}"/>
+        <StackPanel Orientation="Horizontal"
+                    Grid.Row="1"
+                    Grid.Column="3"
+                    Grid.ColumnSpan="2">
+            <Label Grid.Row="1" 
+                   Grid.Column="3" 
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   FontSize="24"
+                   Content="Barcode:"/>
+            <TextBox Grid.Row="1"
+                     Grid.Column="4"
+                     Grid.ColumnSpan="2"
+                     Width="200"
+                     MaxWidth="200"
+                     Text="{Binding Barcode, UpdateSourceTrigger=PropertyChanged}"/>
+            <Button x:Name="Run"
+                    Content="Submit"
+                    FontSize="16"
+                    Width="89"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Food:"
+                       FontSize="24"/>
+                <Label MinWidth="200"
+                       MaxWidth="250"
+                       Content="{Binding FoodName}"/>
+            </StackPanel>
+            <Canvas Height="260">
+                <Image Source="C:\Users\t321s\OneDrive\Documents\My Projects\HackathonXAMLApp\Images\checkMark.PNG"
+                       Canvas.Bottom="20" 
+                       Canvas.Left="80"
+                       HorizontalAlignment="Left" 
+                       Width="227"
+                       Visibility="{Binding visibility, Converter={StaticResource FoodCheckToVisibilityConverter}}"/>
+                <Image Source="C:\Users\t321s\OneDrive\Documents\My Projects\HackathonXAMLApp\Images\errorX.PNG"
+                       Canvas.Bottom="1" 
+                       Canvas.Left="60"
+                       Height="259" 
+                       Width="275"
+                       Panel.ZIndex="-1"
+                       Visibility="{Binding visibility, Converter={StaticResource FoodCheckToVisibilityConverter}}"/>
+            </Canvas>
+        </StackPanel>
+
+        <Label Grid.Row="2"
+               Grid.Column="3"
+               Grid.ColumnSpan="2"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Top"
+               Height="40"
+               Content="Nutritional Information"
+               FontSize="24"/>
+        <DataGrid Grid.Row="2"
+                  Grid.Column="3"
+                  Grid.ColumnSpan="2"
+                  Margin="0 40 0 0">
+
+        </DataGrid>
+    </Grid>
+</Window>

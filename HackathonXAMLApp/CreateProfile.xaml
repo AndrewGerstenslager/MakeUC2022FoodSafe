@@ -1,0 +1,102 @@
+﻿<Window x:Class="HackathonXAMLApp.CreateProfile"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HackathonXAMLApp"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Window.DataContext>
+        <local:User/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Content="Name:" VerticalAlignment="Top"
+               HorizontalAlignment="Center"
+               Grid.ColumnSpan="2"
+               FontSize="40"
+               Margin="0 0 100 0"/>
+        <TextBox Text="{Binding Text, UpdateSourceTrigger=PropertyChanged}"
+                 Grid.Row="0"
+                 Grid.Column="1"
+                 Grid.ColumnSpan="2"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Top"
+                 Height="80"
+                 MinWidth="380"
+                 Margin="0 0 80 0"/>
+        <Label Content="Choose your allergies and dietary restrictions"
+               Grid.Column="0"
+               FontSize="38"
+               Grid.ColumnSpan="3"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"/>
+        <Label Content="Food allergies:"
+               HorizontalAlignment="Right"
+               VerticalAlignment="Bottom"
+               FontSize="30"
+               Margin="0 0 0 20"/>
+        <TextBox Text="{Binding Allergies, UpdateSourceTrigger=PropertyChanged}"
+            Grid.Row="0"
+                 Grid.Column="1"
+                 Grid.ColumnSpan="2"
+                 VerticalAlignment="Bottom"
+                 Height="50"
+                 Margin="0 0 0 20"/>
+        <TextBlock Text="Dietary restrictions:"
+                   Grid.Row="1"
+                   Grid.Column="0"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Right"
+                   FontSize="30"
+                   TextWrapping="Wrap"
+                   TextAlignment="Center"/>
+        <StackPanel Grid.Row="1"
+                    Grid.Column="1"
+                    Orientation="Vertical">
+            <CheckBox Content="Vegetarian" Height="50" Checked="VegetarianCB">
+                <CheckBox.LayoutTransform>
+                    <ScaleTransform ScaleX="1.5" ScaleY="1.5" />
+                </CheckBox.LayoutTransform>
+            </CheckBox>
+            <CheckBox Content="Keto" Height="50" Checked="KetoCB">
+                <CheckBox.LayoutTransform>
+                    <ScaleTransform ScaleX="1.5" ScaleY="1.5" />
+                </CheckBox.LayoutTransform>
+            </CheckBox>
+            <CheckBox Content="Crohn's" Height="50" Checked="CrohnsCB">
+                <CheckBox.LayoutTransform>
+                    <ScaleTransform ScaleX="1.5" ScaleY="1.5" />
+                </CheckBox.LayoutTransform>
+            </CheckBox>
+
+        </StackPanel>
+        <StackPanel Grid.Row="1"
+                    Grid.Column="2"
+                    Orientation="Vertical">
+            <CheckBox Content="Gluten Free" Height="50" Checked="GlutenFreeCB">
+                <CheckBox.LayoutTransform>
+                    <ScaleTransform ScaleX="1.5" ScaleY="1.5" />
+                </CheckBox.LayoutTransform>
+            </CheckBox>
+            <CheckBox Content="Dairy Free" Height="50" Checked="DairyFreeCB">
+                <CheckBox.LayoutTransform>
+                    <ScaleTransform ScaleX="1.5" ScaleY="1.5" />
+                </CheckBox.LayoutTransform>
+            </CheckBox>
+            <CheckBox Content="Vegan" Height="50" Checked="VeganCB">
+                <CheckBox.LayoutTransform>
+                    <ScaleTransform ScaleX="1.5" ScaleY="1.5" />
+                </CheckBox.LayoutTransform>
+            </CheckBox>
+        </StackPanel>
+    </Grid>
+</Window>
