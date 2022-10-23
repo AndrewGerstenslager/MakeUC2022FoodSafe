@@ -1,0 +1,12 @@
+C:\Users\Zak Scherer\source\repos\Arduino Class\Arduino Class\obj\Debug\net6.0\Arduino Class.csproj.AssemblyReference.cache
+C:\Users\Zak Scherer\source\repos\Arduino Class\Arduino Class\obj\Debug\net6.0\Arduino Class.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Zak Scherer\source\repos\Arduino Class\Arduino Class\obj\Debug\net6.0\Arduino Class.AssemblyInfoInputs.cache
+C:\Users\Zak Scherer\source\repos\Arduino Class\Arduino Class\obj\Debug\net6.0\Arduino Class.AssemblyInfo.cs
+C:\Users\Zak Scherer\source\repos\Arduino Class\Arduino Class\obj\Debug\net6.0\Arduino Class.csproj.CoreCompileInputs.cache
+C:\Users\Zak Scherer\source\repos\Arduino Class\Arduino Class\bin\Debug\net6.0\Arduino Class.deps.json
+C:\Users\Zak Scherer\source\repos\Arduino Class\Arduino Class\bin\Debug\net6.0\Arduino Class.dll
+C:\Users\Zak Scherer\source\repos\Arduino Class\Arduino Class\bin\Debug\net6.0\Arduino Class.pdb
+C:\Users\Zak Scherer\source\repos\Arduino Class\Arduino Class\obj\Debug\net6.0\Arduino Class.dll
+C:\Users\Zak Scherer\source\repos\Arduino Class\Arduino Class\obj\Debug\net6.0\refint\Arduino Class.dll
+C:\Users\Zak Scherer\source\repos\Arduino Class\Arduino Class\obj\Debug\net6.0\Arduino Class.pdb
+C:\Users\Zak Scherer\source\repos\Arduino Class\Arduino Class\obj\Debug\net6.0\ref\Arduino Class.dll
