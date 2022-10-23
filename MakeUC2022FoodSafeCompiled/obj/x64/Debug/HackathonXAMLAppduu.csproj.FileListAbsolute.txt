@@ -1,0 +1,11 @@
+C:\Users\jwiss\OneDrive\Documents\MakeUC2022\Repo\MakeUC2022FoodSafe-main\MakeUC2022FoodSafe-main\HackathonXAMLApp\obj\x64\Debug\HackathonXAMLAppduu.csproj.AssemblyReference.cache
+C:\Users\jwiss\OneDrive\Documents\MakeUC2022\Repo\MakeUC2022FoodSafe-main\MakeUC2022FoodSafe-main\HackathonXAMLApp\obj\x64\Debug\HackathonXAMLAppduu.csproj.SuggestedBindingRedirects.cache
+C:\Users\jwiss\OneDrive\Documents\MakeUC2022\Repo\MakeUC2022FoodSafe-main\MakeUC2022FoodSafe-main\HackathonXAMLApp\obj\x64\Debug\CreateProfile.g.cs
+C:\Users\jwiss\OneDrive\Documents\MakeUC2022\Repo\MakeUC2022FoodSafe-main\MakeUC2022FoodSafe-main\HackathonXAMLApp\obj\x64\Debug\BarcodeCamera.g.cs
+C:\Users\jwiss\OneDrive\Documents\MakeUC2022\Repo\MakeUC2022FoodSafe-main\MakeUC2022FoodSafe-main\HackathonXAMLApp\obj\x64\Debug\MainWindow.g.cs
+C:\Users\jwiss\OneDrive\Documents\MakeUC2022\Repo\MakeUC2022FoodSafe-main\MakeUC2022FoodSafe-main\HackathonXAMLApp\obj\x64\Debug\App.g.cs
+C:\Users\jwiss\OneDrive\Documents\MakeUC2022\Repo\MakeUC2022FoodSafe-main\MakeUC2022FoodSafe-main\HackathonXAMLApp\obj\x64\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\jwiss\OneDrive\Documents\MakeUC2022\Repo\MakeUC2022FoodSafe-main\MakeUC2022FoodSafe-main\HackathonXAMLApp\obj\x64\Debug\HackathonXAMLApp_MarkupCompile.cache
+C:\Users\jwiss\OneDrive\Documents\MakeUC2022\Repo\MakeUC2022FoodSafe-main\MakeUC2022FoodSafe-main\HackathonXAMLApp\obj\x64\Debug\HackathonXAMLApp_MarkupCompile.lref
+C:\Users\jwiss\OneDrive\Documents\MakeUC2022\Repo\MakeUC2022FoodSafe-main\MakeUC2022FoodSafe-main\HackathonXAMLApp\obj\x64\Debug\HackathonXAMLApp.exe
+C:\Users\jwiss\OneDrive\Documents\MakeUC2022\Repo\MakeUC2022FoodSafe-main\MakeUC2022FoodSafe-main\HackathonXAMLApp\obj\x64\Debug\HackathonXAMLApp.pdb
