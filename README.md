@@ -6,6 +6,11 @@
 
 Here we have a c# library we can utilize to communicate to the arduino. We also have the associated arduino code located in this folder.
 
+
+#Full App 
+
+This is in the compiled folder. It should run... but we had some crazy libraries for the image processing.
+
 ## Front End - seperate
 
 Here is the seperate components of the XAML fromnt end that we used to control our actions in a graphical form
@@ -13,6 +18,9 @@ Here is the seperate components of the XAML fromnt end that we used to control o
 ## Camera - seperate
 
 Here is the library in XAML we created to read camera feed
+
+
+
 
 ## API
 
